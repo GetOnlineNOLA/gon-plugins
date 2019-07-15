@@ -1,0 +1,3 @@
+a#foot-prev {position: absolute;left: -10px;bottom: 40px;font-size:2em;}
+a#foot-next {position: absolute;right: -10px;bottom: 40px;font-size:2em;}
+.logo-slideshow a > img {margin: 0 auto;}

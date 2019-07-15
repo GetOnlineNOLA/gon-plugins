@@ -1,0 +1,47 @@
+.team-title {margin-bottom: 0;}
+.job-title {margin-top: 0;margin-bottom: .25em;}
+.gon-team img {float: none;margin: 0 auto;}
+.gon-team img {width:100%;}
+.team-intro {padding-bottom: 1em;}
+.team-intro p {margin-top: .5em;}
+.gon-team.plus a {
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(25,46,66);
+    opacity: 0;
+    transition: .3s ease opacity;
+    left: 0;
+}
+.gon-team.plus i.fa.fa-info-circle {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+}
+.gon-team.plus a:hover {
+    opacity: .5;
+}
+.team-member-meta span {display: block;}
+.team-member-meta i {padding-right: 7px;}
+.gon-team a {text-decoration: none;}
+.single-gon_team h1.team-title {margin-bottom: 0;font-size: 1.75em;}
+
+
+
+@media (max-width:768px){
+	.gon-team {width: 65%;margin: 0 auto;}
+	.team-intro {padding: 0 0 1em;}
+	.gon-team.col-sm-6 > div {max-width: 100%;}
+	
+	.team-contact {float: none!important;}
+	.team-contact img {float: left;margin-right: 1em;}
+}
+@media (max-width:480px){
+	.gon-team {width: 100%;}
+	.team-contact img {float: none;}
+}
+

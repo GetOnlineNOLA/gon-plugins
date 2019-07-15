@@ -1,0 +1,18 @@
+/*TESTIMONIALS*/
+.col-sm-12.review {margin-top: 1em;margin-bottom: 2em;padding: 0 2em;}
+.col-sm-12.review:before {font-family: sans-serif;display: block;content: "\201C";font-size: 120px;position: absolute;left: 21px;top: -36px;}
+.col-sm-12.review p{font-size: 1.1em;}
+.col-sm-12.review p:first-child {text-indent: 2em;}
+.col-sm-12.review .review-author, .col-sm-12.review .review-link {display: block;text-align: right;font-size: 1.25em;font-family: 'Roboto';}
+.col-sm-12.review .review-meta {margin-top: 2em;}
+.col-sm-12.review .review-author {}
+.col-sm-12.review .review-author:before {    content: '\2013';    margin-right: 5px;}
+.col-sm-12.review .review-link a {text-decoration: underline;}
+.col-sm-12.review .review-link a:hover {text-decoration: none;}
+.col-sm-12.review .review-link::before {content: 'Review from'; font-style: italic;text-decoration: none;margin-right: 5px;}
+
+
+@media (max-width:768px){
+	.col-sm-12.review {padding: 0 1em;}
+	.col-sm-12.review:before{left: 8px;top: -46px;}
+}

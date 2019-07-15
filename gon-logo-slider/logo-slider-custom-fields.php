@@ -1,0 +1,176 @@
+<?php
+
+if( function_exists('acf_add_local_field_group') ):
+
+acf_add_local_field_group(array (
+	'key' => 'slider-title-logos-key',
+	'title' => 'Logo Sliders',
+	'fields' => array (
+		array (
+			'key' => 'slider-title-logos',
+			'label' => 'Slider Title',
+			'name' => 'slider-title',
+			'type' => 'text',
+			'instructions' => 'Text to display above logos ex: \'Affiliates\'',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+			'readonly' => 0,
+			'disabled' => 0,
+		),
+		array (
+			'key' => 'repeatable-logos',
+			'label' => 'Logo Slider',
+			'name' => 'repeatable-logos',
+			'type' => 'repeater',
+			'instructions' => 'Upload logo & paste link.',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'collapsed' => 'logo-img-sliders',
+			'min' => '',
+			'max' => '',
+			'layout' => 'row',
+			'button_label' => 'Add New Featured Logo',
+			'sub_fields' => array (
+				array (
+					'key' => 'logo-img-sliders',
+					'label' => 'Logo',
+					'name' => 'logo',
+					'type' => 'image',
+					'instructions' => 'Upload logo image - ideally 240px x 75px',
+					'return_format' => 'url',
+					'preview_size' => 'thumbnail',
+				),
+				array (
+					'key' => 'logo-link-sliders',
+					'label' => 'Logo Link',
+					'name' => 'logo-link',
+					'type' => 'text',
+					'instructions' => 'Paste link in this field, don\'t forget the https://',
+				),
+			),
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'logo-slider',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
+	'key' => 'group_5d24b93887ec8',
+	'title' => 'GON Logo Slider Block',
+	'fields' => array(
+		array(
+			'key' => 'field_5d24b93f9a31b',
+			'label' => 'Logo Carousel',
+			'name' => 'logo_carousel',
+			'type' => 'repeater',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'collapsed' => 'field_5d24b96b9a31c',
+			'min' => 0,
+			'max' => 0,
+			'layout' => 'row',
+			'button_label' => '',
+			'sub_fields' => array(
+				array(
+					'key' => 'field_5d24b96b9a31c',
+					'label' => 'Upload Image',
+					'name' => 'upload_image',
+					'type' => 'image',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'array',
+					'preview_size' => 'medium',
+					'library' => 'all',
+					'min_width' => '',
+					'min_height' => '',
+					'min_size' => '',
+					'max_width' => '',
+					'max_height' => '',
+					'max_size' => '',
+					'mime_types' => '',
+				),
+				array(
+					'key' => 'field_5d24b9759a31d',
+					'label' => 'Link',
+					'name' => 'link',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+			),
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/gon-logo-slider',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+
+endif;
