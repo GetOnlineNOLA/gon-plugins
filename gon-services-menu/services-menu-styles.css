@@ -1,0 +1,30 @@
+body .dropdown-menu.relative {
+    position: relative;
+    float: none;
+    border-radius: 0;
+}
+body .dropdown-menu.relative li {
+    text-align: center;
+}
+
+body ul.dropdown-menu.relative li.display-block {
+    display: block;
+}
+.single-gon_services_menu .dropdown-wrap {padding-top: 1.5em;}
+
+a.program-type-link.button {margin-bottom: .5em;margin-right: .5em;white-space: normal;}
+
+.services-menu-sidebar ul.dropdown-menu {background: transparent;}
+
+@media only screen and (min-width : 769px) {
+body ul.dropdown-menu.relative {
+	display: block;
+	box-shadow: none;
+    border: 0;
+	text-align:center;
+}
+	
+body ul.dropdown-menu.relative li {
+    display: inline-block;
+}
+}

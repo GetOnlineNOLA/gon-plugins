@@ -1,0 +1,84 @@
+
+
+.page-builder .col-sm-11.col-sm-offset-0 {margin-left: 4.166%;}
+.page-builder .col-sm-9.col-sm-offset-1 {margin-left: 12.5%;}
+.page-builder .col-sm-7.col-sm-offset-2 {margin-left: 20.835%;}
+.page-builder .col-sm-5.col-sm-offset-3 {margin-left: 29.166%;}
+.page-builder .col-sm-3.col-sm-offset-4 {margin-left: 37.5%;}
+.page-builder .col-sm-1.col-sm-offset-5 {margin-left: 45.833%;}
+
+/*PAGE BUILDER STYLES*/
+section.page-builder {padding: 40px 0;background-size: cover;background-position: center;background-repeat:no-repeat;}
+.pb-column {background-size: cover;background-position: center;background-repeat:no-repeat;}
+
+
+
+
+/*template 1*/
+section.page-builder.template-one .entry-content h1,
+section.page-builder.template-one .entry-content h2,
+section.page-builder.template-one .entry-content h3 {}
+section.page-builder.template-one .entry-content h4 {}
+
+section.page-builder.template-one .entry-content blockquote {}
+
+section.page-builder.template-one .entry-content a {}
+section.page-builder.template-one .entry-content a.button {}
+section.page-builder.template-one .entry-content a.button:hover {}
+
+
+/*template 2*/
+section.page-builder.template-two {background: #eee;}
+section.page-builder.template-two .entry-content {}
+
+section.page-builder.template-two .entry-content h1,
+section.page-builder.template-two .entry-content h2,
+section.page-builder.template-two .entry-content h3,
+section.page-builder.template-two .entry-content h4 {}
+
+section.page-builder.template-two .entry-content blockquote {}
+
+section.page-builder.template-two .entry-content a.button.white {background-color: #eee;}
+section.page-builder.template-two .entry-content a.button {}
+section.page-builder.template-two .entry-content a.button:hover {}
+
+
+
+/*template 3*/
+section.page-builder.template-three {background:#3da4ba;}
+section.page-builder.template-three .entry-content {}
+
+section.page-builder.template-three .entry-content h1 {color: #4f514c;}
+section.page-builder.template-three .entry-content h2,
+section.page-builder.template-three .entry-content h3,
+section.page-builder.template-three .entry-content h4 {color: #fff;}
+
+section.page-builder.template-three .entry-content blockquote {}
+
+section.page-builder.template-three a.button {background-color: white;color: #3da4ba;border-color: white;}
+section.page-builder.template-three a.button:hover {color: white;}
+section.page-builder.template-three a.button:before {background-color: #3da4ba;}
+section.page-builder.template-three a.button.white {background-color: #3da4ba;color: #fff;border-color: white;}
+section.page-builder.template-three a.button.white:hover {color: #3da4ba;}
+section.page-builder.template-three a.button.white:before {background-color: #fff;}
+section.page-builder.template-three a.button.outline {background-color: #3da4ba;color: #4f514c;border-color: #4f514c;}
+section.page-builder.template-three a.button.outline:hover {color: #fff;}
+section.page-builder.template-three a.button.outline:before {background-color: #4f514c;}
+section.page-builder.template-three .entry-content p, 
+section.page-builder.template-three .entry-content li {color: #fff;}
+section.page-builder.template-three .entry-content a:not(.button) {color: #fff;}
+section.page-builder.template-three ol li:before, 
+section.page-builder.template-three .entry-content ul li:before {color: #fff;}
+section.page-builder.template-three blockquote {border-color: #fff;}
+
+
+
+@media (min-width: 481px){
+
+}
+    
+@media (min-width: 769px){
+	/*Flex on anything wider than a tablet*/
+	section.page-builder .flex {display: flex;}
+
+}
