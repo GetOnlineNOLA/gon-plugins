@@ -78,9 +78,84 @@
 .wp-native-gallery .caption {}
 
 
-/*//slideshow*/
+/*slideshow*/
 .wp-block-gallery.slideshow .blocks-gallery-item {
     width: auto!important;
 }
 .wp-block-gallery.slideshow .blocks-gallery-item img {margin: 0!important;}
+
+
+
+
+
+/*lightbox*/
+.blocks-gallery-item {
+    overflow: hidden;
+}
+#gon_lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#gon_lightbox .inner {
+    display: inline-block;
+    position: relative;
+}
+#gon_lightbox .inner img {
+    max-height: 70vh;
+    max-width: 100%;
+}
+#gon_lightbox .inner #exit {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+#gon_lightbox .inner .lightbox-caption {
+    color: white;
+    margin-top: 10px;
+}
+#gon_lightbox span#prev:hover, 
+#gon_lightbox span#next:hover,
+#gon_lightbox .inner #exit:hover {
+    cursor: pointer;
+}
+
+#gon_lightbox span#prev, 
+#gon_lightbox span#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    font-size: 50px;
+    color: white;
+}
+#gon_lightbox span#prev {
+    left: -30px;
+}
+#gon_lightbox span#next {
+    right: -30px;
+}
+
+.wp-block-gallery .blocks-gallery-item figcaption {
+    bottom: -100%;
+}
+.wp-block-gallery .blocks-gallery-item:hover figcaption {
+    bottom: 0;
+}
+
+
+
+
+
+
+
 
