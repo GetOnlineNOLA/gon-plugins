@@ -20,6 +20,7 @@ function create_post_type_gon_services_menu() {
       'public' => true,
 	'menu_icon' => 'dashicons-list-view',
       'has_archive' => false,
+	    'show_in_rest' => true,
 	  'menu_position' => 5,
 	  'capability_type'    => 'post',
 	  'supports' => array('title', 'editor','page-attributes','thumbnail'),
