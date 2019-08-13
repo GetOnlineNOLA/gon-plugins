@@ -174,20 +174,26 @@ window.onYouTubePlayerAPIReady = function() {
 			jQuery(this).attr('src',newSrc);
 		})
 
-		//ensure all images and videos cover entire slide
-		var slideRatio = jQuery("#gon-video-slideshow").height()/jQuery("#gon-video-slideshow").width();
-		jQuery('.slider-image, .video-poster, .slider-video').each(function(){
-			var imgRatio = jQuery(this).height()/jQuery(this).width();
-			console.log(this,'imgRatio'+imgRatio,'slideRatio'+slideRatio);
-			if(imgRatio>slideRatio){
-				jQuery(this).addClass('stretch-horz');
-			} else {
-				jQuery(this).addClass('stretch-vert');
-			}
-		});
 	});
 }
 
+jQuery(window).on('load',function(){
+	//ensure all images and videos cover entire slide
+	var slideHeight = jQuery("#gon-video-slideshow").height();
+	var slideWidth = jQuery("#gon-video-slideshow").width();
+	console.log(slideWidth/slideHeight);
+	var slideRatio = jQuery("#gon-video-slideshow").width()/jQuery("#gon-video-slideshow").height();
+	jQuery('.slider-image, .video-poster, .slider-video').each(function(){
+		var imgRatio = jQuery(this).width()/jQuery(this).height();
+		console.log(this,'imgRatio'+imgRatio,'slideRatio'+slideRatio);
+		if(imgRatio<slideRatio){
+			jQuery(this).addClass('stretch-horz');
+		} else {
+			jQuery(this).addClass('stretch-vert');
+		}
+	});
+})
+	
 
 //mute each player on init
 function playerMute(event) {
